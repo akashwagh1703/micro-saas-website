@@ -1,8 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 
-/**
- * Fires once when element enters viewport. Respects prefers-reduced-motion.
- */
 export function useInView(options = {}) {
   const {
     threshold = 0.15,
