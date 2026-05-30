@@ -3,8 +3,8 @@ export const PORTAL_URL = (import.meta.env.VITE_PORTAL_URL || 'https://micro-saa
   '',
 );
 
-export const loginUrl = `${PORTAL_URL}/login`;
-export const registerUrl = `${PORTAL_URL}/register`;
+export const loginUrl = `${PORTAL_URL}`;
+export const registerUrl = `${PORTAL_URL}`;
 
 export const contact = {
   email: import.meta.env.VITE_CONTACT_EMAIL || 'hello@whatsflow.in',
