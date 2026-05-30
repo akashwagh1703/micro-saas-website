@@ -43,4 +43,4 @@ If you configure manually, add a rewrite: `/*` → `/index.html`.
 | `Vite requires Node.js version ^20.19.0 \|\| >=22.12.0` | Set **Node 22.12** (or 20.19+) in Render |
 | `Missing script: "start"` | You created a **Web Service** — switch to **Static Site** |
 | Build OK but 404 on `/pricing` | Add SPA rewrite rule (see `render.yaml`) |
-| Blank page / wrong assets | Set `VITE_BASE_PATH=/` |
+| Build OK but 404 on `/assets/index-*.js` | **Stale cache** — hard refresh (`Ctrl+Shift+R`). Old `index.html` references a previous build's hash. Redeploy + `_headers` fixes this going forward. |
