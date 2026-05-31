@@ -1,7 +1,7 @@
 export const socialProof = {
   headline: 'Built for clinics, shops & coaches across India',
   cities: ['Nashik', 'Pune', 'Mumbai', 'Bengaluru', 'Delhi'],
-  roiLine: '1 missed WhatsApp lead can cost ₹500–₹5,000 — reply instantly, 24/7.',
+  roiLine: '1 missed DM can cost ₹500–₹5,000 — reply on WhatsApp & Instagram, 24/7.',
 };
 
 export const steps = [
@@ -12,8 +12,8 @@ export const steps = [
   },
   {
     num: 2,
-    title: 'Connect WhatsApp',
-    desc: 'Paste your Meta WhatsApp Business credentials. WhatsFlow sets up the webhook automatically — no coding.',
+    title: 'Connect WhatsApp or Instagram',
+    desc: 'Link your Meta WhatsApp number and/or Instagram Business account. WhatsFlow configures webhooks — no coding.',
   },
   {
     num: 3,
@@ -45,6 +45,7 @@ export const setupItems = [
   { done: true, title: 'Account created', desc: 'Welcome to WhatsFlow' },
   { done: true, title: 'Business type selected', desc: 'Clinic — appointment booking, FAQ' },
   { done: true, title: 'WhatsApp connected', desc: '+91 98765 43210 · Verified' },
+  { done: true, title: 'Instagram connected', desc: '@yourbusiness · DMs enabled' },
   { done: false, title: 'Go live on first bot', desc: 'Click "Go live" on Auto-replies page' },
 ];
 
@@ -56,10 +57,10 @@ export const plans = [
     period: '/ month',
     featured: false,
     features: [
-      'Unlimited auto-replies',
+      'WhatsApp + Instagram auto-replies',
+      'Unlimited workflows',
       'All industries & templates',
-      'Visual workflow editor',
-      'Customer inbox & contacts',
+      'Unified inbox, contacts & leads',
       'Smart AI replies (BYOK)',
       '14-day free trial included',
     ],
@@ -82,11 +83,11 @@ export const plans = [
 ];
 
 export const featureList = [
-  { icon: 'Zap', title: 'Go live in 15 min', desc: 'Guided 4-step setup — no developers needed' },
-  { icon: 'Shield', title: 'Your number, your keys', desc: 'BYOK for WhatsApp & AI — you stay in control' },
-  { icon: 'Inbox', title: 'Unified inbox', desc: 'All customer chats in one clean dashboard' },
+  { icon: 'Zap', title: 'Go live in 15 min', desc: 'Guided setup — connect WhatsApp, Instagram, or both' },
+  { icon: 'Shield', title: 'Your accounts, your keys', desc: 'BYOK for Meta messaging & AI — you stay in control' },
+  { icon: 'Inbox', title: 'Unified inbox', desc: 'WhatsApp and Instagram DMs in one dashboard' },
   { icon: 'Bot', title: 'Industry templates', desc: 'Pre-built bots for 10+ business types' },
-  { icon: 'MessageCircle', title: 'Smart auto-replies', desc: 'Keyword triggers + AI-powered conversations' },
+  { icon: 'MessageCircle', title: 'Smart auto-replies', desc: 'Channel-aware triggers + AI conversations' },
   { icon: 'Clock', title: 'Always on', desc: 'Reply at 2 AM while you sleep — bots never rest' },
 ];
 
@@ -280,7 +281,11 @@ export const portalScreens = [
 export const faqItems = [
   {
     q: 'Do I need a developer to set up WhatsFlow?',
-    a: 'No. WhatsFlow is built for business owners. A guided 4-step checklist walks you through sign-up, connecting WhatsApp, picking your industry template, and going live — usually in under 15 minutes.',
+    a: 'No. WhatsFlow is built for business owners. A guided checklist walks you through sign-up, connecting WhatsApp or Instagram, picking your industry template, and going live — usually in under 15 minutes.',
+  },
+  {
+    q: 'Does WhatsFlow support Instagram DMs?',
+    a: 'Yes. Connect your Instagram Business account linked to a Facebook Page. Auto-replies, inbox, and lead capture work the same as WhatsApp — with channel filters so you can run Instagram-only or multi-channel bots.',
   },
   {
     q: 'Can I use my existing WhatsApp Business number?',
@@ -288,7 +293,7 @@ export const faqItems = [
   },
   {
     q: 'What does the ₹499/month cover?',
-    a: 'The platform fee covers WhatsFlow dashboard, auto-replies, inbox, contacts, industry templates, and the visual workflow editor. WhatsApp conversation charges from Meta and optional AI usage (OpenRouter/OpenAI) are billed separately in your own accounts.',
+    a: 'The platform fee covers WhatsFlow dashboard, WhatsApp and Instagram auto-replies, unified inbox, contacts, leads, industry templates, and the visual workflow editor. Meta messaging charges and optional AI usage (OpenRouter/OpenAI) are billed separately in your own accounts.',
   },
   {
     q: 'Is there really a free trial without a credit card?',
@@ -329,8 +334,8 @@ export const blogPosts = [
 ];
 
 export const aboutPoints = [
-  'Built for Indian small businesses who live on WhatsApp',
+  'Built for Indian small businesses on WhatsApp and Instagram',
   'Plain language — no developer jargon in the dashboard',
-  'Platform fee only — you bring your own WhatsApp & AI keys',
+  'One platform fee — WhatsApp + Instagram auto-replies included',
   '14-day free trial with full access, no credit card',
 ];

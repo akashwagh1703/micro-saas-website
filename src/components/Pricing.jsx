@@ -66,7 +66,7 @@ export default function Pricing({ compact = false }) {
         {!compact && (
           <Reveal variant="blur" delay={200}>
             <p className="type-body mx-auto mt-8 max-w-lg text-center text-slate-500">
-              WhatsApp fees billed by Meta. Smart AI uses your OpenRouter or OpenAI key.
+              WhatsApp and Instagram messaging fees are billed by Meta. Smart AI uses your OpenRouter or OpenAI key.
             </p>
           </Reveal>
         )}

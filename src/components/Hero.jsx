@@ -33,17 +33,18 @@ export default function Hero() {
         <Reveal variant="left">
           <div className="type-badge mb-5 inline-flex max-w-full items-center gap-2 rounded-full border border-emerald-200/80 bg-white/90 px-3.5 py-1.5 text-emerald-700 shadow-sm backdrop-blur sm:mb-6">
             <Sparkles size={14} className="shrink-0 text-emerald-500" />
-            <span>India&apos;s WhatsApp automation for small business</span>
+            <span>WhatsApp & Instagram automation for small business</span>
           </div>
 
           <h1 className="type-display">
             Auto-reply on <span className="text-gradient">WhatsApp</span>
+            {' '}& <span className="text-gradient">Instagram</span>
             <br />
             24/7 — no code needed
           </h1>
 
           <p className="type-body-lg mt-4 max-w-lg text-slate-600 sm:mt-5">
-            Connect your WhatsApp Business number. Pick your industry. Go live in minutes — customers get instant replies while you focus on your business.
+            Connect WhatsApp and/or Instagram. Pick your industry. Go live in minutes — customers get instant replies on every channel.
           </p>
 
           <p className="type-caption mt-3 max-w-lg font-medium text-slate-500 italic">

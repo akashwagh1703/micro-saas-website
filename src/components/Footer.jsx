@@ -66,7 +66,7 @@ export default function Footer() {
               <span className="text-lg font-extrabold tracking-tight text-slate-900">WhatsFlow</span>
             </Link>
             <p className="type-body mt-4 max-w-sm text-slate-600">
-              WhatsApp automation built for Indian small businesses — clinics, shops, coaches, and more. Go live in minutes.
+              WhatsApp and Instagram auto-replies for Indian small businesses — clinics, shops, coaches, and more. Go live in minutes.
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               {socialLinks.map(({ label, href, color }) => (
