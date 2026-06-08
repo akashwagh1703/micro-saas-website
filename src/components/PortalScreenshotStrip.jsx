@@ -16,7 +16,7 @@ function BrowserFrame({ screen, index, scroll }) {
           <span className="h-2 w-2 rounded-full bg-amber-400/90" />
           <span className="h-2 w-2 rounded-full bg-emerald-400/90" />
           <span className="ml-2 flex-1 truncate rounded-md bg-white/70 px-2 py-0.5 text-[9px] text-slate-400">
-            portal.whatsflow.in/{screen.path}
+            portal.autowave.in/{screen.path}
           </span>
         </div>
         <div className="portal-frame-body overflow-hidden bg-slate-100">
@@ -48,7 +48,7 @@ export default function PortalScreenshotStrip() {
         <p className="type-overline text-center text-violet-600">Inside the portal</p>
         <h3 className="type-h3 mt-2 text-center text-slate-900">Your dashboard — simple & guided</h3>
         <p className="type-body mx-auto mt-2 max-w-lg text-center text-slate-600">
-          Real screens from the WhatsFlow portal: guided setup, auto-replies, inbox, and go-live.
+          Real screens from the AutoWave portal: guided setup, auto-replies, inbox, and go-live.
         </p>
       </div>
 

@@ -14,7 +14,7 @@ export default function AboutPage() {
         <PageHero
           badge="About us"
           title="WhatsApp automation made simple for India"
-          subtitle="We built WhatsFlow so clinic owners, shopkeepers, and coaches can reply to customers instantly — without hiring developers."
+          subtitle="We built AutoWave so clinic owners, shopkeepers, and coaches can reply to customers instantly — without hiring developers."
         />
       }
     >
@@ -32,11 +32,11 @@ export default function AboutPage() {
           </StaggerGroup>
           <Reveal variant="blur" delay={200}>
             <p className="type-body mt-8 leading-relaxed text-slate-600">
-              WhatsFlow is a platform — you bring your WhatsApp number and optional AI keys. We host the
+              AutoWave is a platform — you bring your WhatsApp number and optional AI keys. We host the
               automation engine, dashboard, and inbox.
             </p>
             <a href={registerUrl} className="btn-primary mt-6 w-full sm:w-auto">
-              Join WhatsFlow today
+              Join AutoWave today
             </a>
           </Reveal>
         </ContentCard>

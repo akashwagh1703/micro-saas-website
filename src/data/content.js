@@ -8,12 +8,12 @@ export const steps = [
   {
     num: 1,
     title: 'Sign up & pick industry',
-    desc: 'Create your account and tell WhatsFlow your business type — clinic, shop, coaching, real estate, and more.',
+    desc: 'Create your account and tell AutoWave your business type — clinic, shop, coaching, real estate, and more.',
   },
   {
     num: 2,
     title: 'Connect WhatsApp or Instagram',
-    desc: 'Link your Meta WhatsApp number and/or Instagram Business account. WhatsFlow configures webhooks — no coding.',
+    desc: 'Link your Meta WhatsApp number and/or Instagram Business account. AutoWave configures webhooks — no coding.',
   },
   {
     num: 3,
@@ -42,7 +42,7 @@ export const industries = [
 ];
 
 export const setupItems = [
-  { done: true, title: 'Account created', desc: 'Welcome to WhatsFlow' },
+  { done: true, title: 'Account created', desc: 'Welcome to AutoWave' },
   { done: true, title: 'Business type selected', desc: 'Clinic — appointment booking, FAQ' },
   { done: true, title: 'WhatsApp connected', desc: '+91 98765 43210 · Verified' },
   { done: true, title: 'Instagram connected', desc: '@yourbusiness · DMs enabled' },
@@ -121,14 +121,14 @@ export const chatDemo = [
   },
   {
     type: 'out',
-    label: 'WhatsFlow Bot',
+    label: 'AutoWave Bot',
     text: 'Namaste! Welcome to Ramesh Clinic.\nMon–Sat, 9am–7pm\n\nReply: 1 Morning · 2 Afternoon · 3 Evening',
     time: '10:32 AM ✓✓',
   },
   { type: 'in', label: 'Customer', text: '2', time: '10:33 AM' },
   {
     type: 'out',
-    label: 'WhatsFlow Bot',
+    label: 'AutoWave Bot',
     text: 'Perfect! Please share your name and preferred date.',
     time: '10:33 AM ✓✓',
   },
@@ -141,14 +141,14 @@ export const chatDemosByIndustry = {
     { type: 'in', label: 'Customer', text: 'Sugar 1kg kitna hai? Shop open hai?', time: '6:15 PM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Namaste! Sharma General Store.\nSugar 1kg — ₹52\n\nOpen: 8am–9pm daily\n\nReply 1 to order · 2 for full price list',
       time: '6:15 PM ✓✓',
     },
     { type: 'in', label: 'Customer', text: '1', time: '6:16 PM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Great! Share your address — we will confirm delivery time.',
       time: '6:16 PM ✓✓',
     },
@@ -157,14 +157,14 @@ export const chatDemosByIndustry = {
     { type: 'in', label: 'Parent', text: 'Class 10 maths batch fees? Demo class hai?', time: '11:02 AM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Hi! Bright Minds Coaching.\nClass 10 Maths — ₹3,500/month\nSat–Sun demo available\n\nReply: 1 Book demo · 2 Fee details',
       time: '11:02 AM ✓✓',
     },
     { type: 'in', label: 'Parent', text: '1', time: '11:03 AM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Please share student name + preferred Saturday or Sunday.',
       time: '11:03 AM ✓✓',
     },
@@ -173,14 +173,14 @@ export const chatDemosByIndustry = {
     { type: 'in', label: 'Customer', text: '2BHK Nashik mein available hai? Budget 45L', time: '4:20 PM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Namaste! Green Homes Realty.\n3 matching 2BHK listings in Nashik\n\nReply 1 for photos · 2 to schedule site visit',
       time: '4:20 PM ✓✓',
     },
     { type: 'in', label: 'Customer', text: '2', time: '4:21 PM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Share your name and preferred visit date — our agent will confirm.',
       time: '4:21 PM ✓✓',
     },
@@ -189,14 +189,14 @@ export const chatDemosByIndustry = {
     { type: 'in', label: 'Customer', text: 'Goa trip package 4 log ke liye?', time: '9:10 AM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Hi! Wander India Travels.\nGoa 4N/5D from ₹18,999/person\n\nReply 1 for itinerary · 2 to talk to agent',
       time: '9:10 AM ✓✓',
     },
     { type: 'in', label: 'Customer', text: '1', time: '9:11 AM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Sending full itinerary PDF… Share travel dates when ready!',
       time: '9:11 AM ✓✓',
     },
@@ -205,14 +205,14 @@ export const chatDemosByIndustry = {
     { type: 'in', label: 'Customer', text: 'Are you open today? Need quick info.', time: '2:45 PM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Hello! Thanks for messaging.\nWe are open today 9am–7pm.\n\nReply 1 for FAQs · 2 to leave your query',
       time: '2:45 PM ✓✓',
     },
     { type: 'in', label: 'Customer', text: '1', time: '2:46 PM' },
     {
       type: 'out',
-      label: 'WhatsFlow Bot',
+      label: 'AutoWave Bot',
       text: 'Here are our top FAQs — or type your question anytime.',
       time: '2:46 PM ✓✓',
     },
@@ -248,7 +248,7 @@ export const portalScreens = [
     id: 'setup',
     path: 'workflows',
     image: '/portal/guided-setup.png',
-    alt: 'WhatsFlow guided setup — pick your business type',
+    alt: 'AutoWave guided setup — pick your business type',
     label: 'Guided setup',
     caption: 'Pick your business — we create auto-replies for you',
   },
@@ -256,7 +256,7 @@ export const portalScreens = [
     id: 'workflows',
     path: 'workflows',
     image: '/portal/auto-replies.png',
-    alt: 'WhatsFlow auto-replies dashboard with live bots',
+    alt: 'AutoWave auto-replies dashboard with live bots',
     label: 'Auto-replies',
     caption: 'Turn bots on or off — live when you are ready',
   },
@@ -264,7 +264,7 @@ export const portalScreens = [
     id: 'inbox',
     path: 'inbox',
     image: '/portal/inbox.png',
-    alt: 'WhatsFlow customer inbox with WhatsApp conversations',
+    alt: 'AutoWave customer inbox with WhatsApp conversations',
     label: 'Customer inbox',
     caption: 'Every WhatsApp chat in one place',
   },
@@ -272,7 +272,7 @@ export const portalScreens = [
     id: 'live',
     path: 'dashboard',
     image: '/portal/go-live.png',
-    alt: 'WhatsFlow home dashboard after going live',
+    alt: 'AutoWave home dashboard after going live',
     label: 'Go live',
     caption: "You're all set — stats at a glance",
   },
@@ -280,20 +280,20 @@ export const portalScreens = [
 
 export const faqItems = [
   {
-    q: 'Do I need a developer to set up WhatsFlow?',
-    a: 'No. WhatsFlow is built for business owners. A guided checklist walks you through sign-up, connecting WhatsApp or Instagram, picking your industry template, and going live — usually in under 15 minutes.',
+    q: 'Do I need a developer to set up AutoWave?',
+    a: 'No. AutoWave is built for business owners. A guided checklist walks you through sign-up, connecting WhatsApp or Instagram, picking your industry template, and going live — usually in under 15 minutes.',
   },
   {
-    q: 'Does WhatsFlow support Instagram DMs?',
+    q: 'Does AutoWave support Instagram DMs?',
     a: 'Yes. Connect your Instagram Business account linked to a Facebook Page. Auto-replies, inbox, and lead capture work the same as WhatsApp — with channel filters so you can run Instagram-only or multi-channel bots.',
   },
   {
     q: 'Can I use my existing WhatsApp Business number?',
-    a: 'Yes. You connect your own number via Meta WhatsApp Cloud API credentials. Your customers message the same number they already know — WhatsFlow runs the auto-replies behind it.',
+    a: 'Yes. You connect your own number via Meta WhatsApp Cloud API credentials. Your customers message the same number they already know — AutoWave runs the auto-replies behind it.',
   },
   {
     q: 'What does the ₹499/month cover?',
-    a: 'The platform fee covers WhatsFlow dashboard, WhatsApp and Instagram auto-replies, unified inbox, contacts, leads, industry templates, and the visual workflow editor. Meta messaging charges and optional AI usage (OpenRouter/OpenAI) are billed separately in your own accounts.',
+    a: 'The platform fee covers AutoWave dashboard, WhatsApp and Instagram auto-replies, unified inbox, contacts, leads, industry templates, and the visual workflow editor. Meta messaging charges and optional AI usage (OpenRouter/OpenAI) are billed separately in your own accounts.',
   },
   {
     q: 'Is there really a free trial without a credit card?',
@@ -326,7 +326,7 @@ export const blogPosts = [
   },
   {
     slug: 'clinic-appointment-bot',
-    title: 'How clinics use WhatsFlow for appointment booking',
+    title: 'How clinics use AutoWave for appointment booking',
     date: 'Apr 28, 2026',
     excerpt: 'Real workflow examples: timings FAQ, slot selection, and follow-up messages patients love.',
     tag: 'Industry',

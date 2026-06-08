@@ -10,7 +10,7 @@ export default function IndustriesPage() {
         <PageHero
           badge="Industries"
           title="Templates for every type of business"
-          subtitle="Pick your industry at sign-up — WhatsFlow creates ready-made auto-replies instantly."
+          subtitle="Pick your industry at sign-up — AutoWave creates ready-made auto-replies instantly."
         />
       }
     >

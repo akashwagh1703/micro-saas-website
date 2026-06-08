@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Headphones, Mail, Phone, MessageCircle } from 'lucide-react';
-import WhatsAppLogo from './WhatsAppLogo';
 import { footerProductLinks, footerCompanyLinks } from '../data/content';
 import { registerUrl, contact, mailtoUrl, telUrl, whatsappUrl, socialLinks } from '../config';
+import { AutoWaveMark } from './AutoWaveBrand';
 
 const contactCards = [
   { icon: Mail, label: 'Email', value: contact.email, href: mailtoUrl, accent: 'text-emerald-600' },
@@ -59,11 +59,8 @@ export default function Footer() {
       <div className="container-main py-12 pb-20 sm:pb-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-5">
-            <Link to="/" className="inline-flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#25D366] to-emerald-600 text-white shadow-md">
-                <WhatsAppLogo />
-              </span>
-              <span className="text-lg font-extrabold tracking-tight text-slate-900">WhatsFlow</span>
+            <Link to="/" className="inline-flex">
+              <AutoWaveMark />
             </Link>
             <p className="type-body mt-4 max-w-sm text-slate-600">
               WhatsApp and Instagram auto-replies for Indian small businesses — clinics, shops, coaches, and more. Go live in minutes.
@@ -111,7 +108,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-slate-100 pt-8 text-center sm:flex-row sm:text-left">
-          <p className="type-caption text-slate-500">© {new Date().getFullYear()} WhatsFlow · Made for India&apos;s small businesses</p>
+          <p className="type-caption text-slate-500">© {new Date().getFullYear()} AutoWave · Made for India&apos;s small businesses</p>
           <p className="type-caption text-slate-400">Powered by Meta WhatsApp Cloud API</p>
         </div>
       </div>

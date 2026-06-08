@@ -37,7 +37,7 @@ export default function BlogPostPage() {
           <Reveal variant="up">
             <p className="type-body-lg leading-relaxed text-slate-700">{post.excerpt}</p>
             <p className="type-body mt-6 leading-relaxed text-slate-600">
-              This is a preview article on the WhatsFlow marketing site. Full blog content coming soon.
+              This is a preview article on the AutoWave marketing site. Full blog content coming soon.
               In the meantime, start your free trial and explore the guided setup in the app dashboard.
             </p>
             <a href={registerUrl} className="btn-primary mt-8 w-full sm:w-auto">

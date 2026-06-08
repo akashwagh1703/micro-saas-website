@@ -1,6 +1,6 @@
-# WhatsFlow marketing website
+# AutoWave marketing website
 
-React + Vite + Tailwind v4 static site for [WhatsFlow](https://micro-saas-portal.onrender.com).
+React + Vite + Tailwind v4 static site for [AutoWave](https://micro-saas-portal.onrender.com).
 
 ## Local dev
 

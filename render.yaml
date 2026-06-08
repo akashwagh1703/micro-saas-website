@@ -1,4 +1,4 @@
-# Render Blueprint: static site for the WhatsFlow marketing website (Vite/React).
+# Render Blueprint: static site for the AutoWave marketing website (Vite/React).
 # Create as "Static Site" — NOT a Web Service.
 services:
   - type: web

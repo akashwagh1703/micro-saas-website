@@ -1,9 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
-import WhatsAppLogo from './WhatsAppLogo';
 import { navLinks } from '../data/content';
 import { loginUrl, registerUrl } from '../config';
+import { AutoWaveMark } from './AutoWaveBrand';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -34,11 +34,8 @@ export default function Navbar() {
         }`}
       >
         <div className="flex items-center justify-between gap-3">
-          <Link to="/" className="flex min-w-0 items-center gap-2.5">
-            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#25D366] to-emerald-500 text-white shadow-md shadow-emerald-500/30 sm:h-10 sm:w-10">
-              <WhatsAppLogo />
-            </span>
-            <span className="truncate text-base font-extrabold tracking-tight text-slate-900 sm:text-lg">WhatsFlow</span>
+          <Link to="/" className="flex min-w-0 items-center">
+            <AutoWaveMark />
           </Link>
 
           <nav className="hidden items-center gap-1 md:flex lg:gap-2">

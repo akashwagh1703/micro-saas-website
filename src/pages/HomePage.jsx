@@ -23,7 +23,7 @@ export default function HomePage() {
         <div className="container-main">
           <SectionHeader
             chapter="01 — Features"
-            badge="Why WhatsFlow"
+            badge="Why AutoWave"
             title="Built for owners, not developers"
             subtitle="Plain language, guided setup, and automation that works for Indian small businesses."
             badgeColor="violet"

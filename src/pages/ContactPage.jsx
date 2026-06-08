@@ -88,7 +88,7 @@ export default function ContactPage() {
             <div className="mt-8 flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
               <MapPin className="mt-0.5 shrink-0 text-slate-400" size={20} />
               <div>
-                <p className="type-body font-semibold text-slate-800">WhatsFlow</p>
+                <p className="type-body font-semibold text-slate-800">AutoWave</p>
                 <p className="type-body text-slate-600">Built for small businesses across India · Remote-first team</p>
               </div>
             </div>
