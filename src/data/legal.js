@@ -2,7 +2,7 @@
 
 export const privacyPolicy = {
   title: 'Privacy Policy',
-  updated: 'May 30, 2026',
+  updated: 'June 8, 2026',
   intro:
     'AutoWave ("we", "us", "our") operates the AutoWave platform at autowave.in and related applications (the "Service"). This Privacy Policy explains how we collect, use, store, and protect your information when you use our Service. By registering or using AutoWave, you agree to this policy.',
   sections: [
@@ -127,8 +127,18 @@ export const privacyPolicy = {
       ],
     },
     {
+      id: 'career-ai',
+      title: '10. CareerAI job seeker data',
+      paragraphs: [
+        'If you enable the CareerAI business type, job seekers who message your WhatsApp number may upload resumes (PDF/DOCX), share salary and location preferences, and receive AI-generated career content.',
+        'As the business operator, you are the data controller for your job seekers\' data. AutoWave stores resumes in object storage (MinIO/S3 when configured), parses resume text with your configured AI provider, and applies configurable retention for extracted text in the database.',
+        'Job seekers can reply DELETE MY DATA on WhatsApp to permanently erase their CareerAI profile. Operators can also delete profiles from the CareerAI portal. Deletion removes database records and stored resume files.',
+        'You must provide job seekers with a clear privacy notice explaining what you collect, how long you keep it, and how they can request deletion.',
+      ],
+    },
+    {
       id: 'cookies',
-      title: '10. Cookies & local storage',
+      title: '11. Cookies & local storage',
       paragraphs: [
         'The AutoWave web application (portal) uses local storage and session tokens to keep you logged in. Our marketing website may use essential cookies for basic functionality.',
         'We do not use third-party advertising cookies on the Service.',
@@ -136,21 +146,21 @@ export const privacyPolicy = {
     },
     {
       id: 'children',
-      title: '11. Children\'s privacy',
+      title: '12. Children\'s privacy',
       paragraphs: [
         'AutoWave is a business tool not intended for users under 18. We do not knowingly collect data from children. Contact us if you believe a minor has registered an account.',
       ],
     },
     {
       id: 'international',
-      title: '12. International data transfers',
+      title: '13. International data transfers',
       paragraphs: [
         'Your data may be processed on servers located in India or other countries where our cloud providers operate. By using the Service, you consent to such transfers subject to appropriate safeguards.',
       ],
     },
     {
       id: 'changes',
-      title: '13. Changes to this policy',
+      title: '14. Changes to this policy',
       paragraphs: [
         'We may update this Privacy Policy from time to time. We will post the revised policy on this page with an updated "Last updated" date. Material changes will be notified via email or in-app notice where appropriate.',
         'Continued use of the Service after changes constitutes acceptance of the updated policy.',
@@ -158,7 +168,7 @@ export const privacyPolicy = {
     },
     {
       id: 'contact',
-      title: '14. Contact us',
+      title: '15. Contact us',
       paragraphs: [
         'For privacy questions, data requests, or complaints:',
         'Email: hello@autowave.in',
