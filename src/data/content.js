@@ -108,8 +108,50 @@ export const footerProductLinks = [
 export const footerCompanyLinks = [
   { label: 'About us', to: '/about' },
   { label: 'Contact us', to: '/contact' },
+  { label: 'CareerAI', to: '/career-ai' },
+  { label: 'Blog', to: '/blog' },
+];
+
+export const footerLegalLinks = [
   { label: 'Privacy policy', to: '/privacy' },
   { label: 'Terms of use', to: '/terms' },
+  { label: 'Refund & cancellation', to: '/refund' },
+  { label: 'Shipping & delivery', to: '/delivery' },
+  { label: 'Cookie policy', to: '/cookies' },
+  { label: 'Security', to: '/security' },
+];
+
+export const careerAiFeatures = [
+  {
+    icon: 'MessageCircle',
+    title: 'WhatsApp onboarding',
+    desc: 'Candidates complete profile setup, experience, and preferences entirely in chat.',
+  },
+  {
+    icon: 'FileText',
+    title: 'Resume parsing',
+    desc: 'Upload PDF/DOCX resumes — AI extracts skills, experience, and education automatically.',
+  },
+  {
+    icon: 'Target',
+    title: 'Smart job matching',
+    desc: 'Match scores based on skills, experience, salary, location, and work mode preferences.',
+  },
+  {
+    icon: 'Briefcase',
+    title: 'Multi-source jobs',
+    desc: 'Pull listings from Adzuna, JSearch, and custom APIs — or add your own job board.',
+  },
+  {
+    icon: 'Sparkles',
+    title: 'AI career guidance',
+    desc: 'Mock interviews, cover letters, and personalized career tips powered by your AI keys.',
+  },
+  {
+    icon: 'Users',
+    title: 'Operator portal',
+    desc: 'Manage profiles, applications, matches, and optional seeker billing from one dashboard.',
+  },
 ];
 
 export const chatDemo = [
@@ -247,7 +289,7 @@ export const portalScreens = [
   {
     id: 'setup',
     path: 'workflows',
-    image: '/portal/guided-setup.png',
+    image: '/portal/guided-setup.svg',
     alt: 'AutoWave guided setup — pick your business type',
     label: 'Guided setup',
     caption: 'Pick your business — we create auto-replies for you',
@@ -255,7 +297,7 @@ export const portalScreens = [
   {
     id: 'workflows',
     path: 'workflows',
-    image: '/portal/auto-replies.png',
+    image: '/portal/auto-replies.svg',
     alt: 'AutoWave auto-replies dashboard with live bots',
     label: 'Auto-replies',
     caption: 'Turn bots on or off — live when you are ready',
@@ -263,7 +305,7 @@ export const portalScreens = [
   {
     id: 'inbox',
     path: 'inbox',
-    image: '/portal/inbox.png',
+    image: '/portal/inbox.svg',
     alt: 'AutoWave customer inbox with WhatsApp conversations',
     label: 'Customer inbox',
     caption: 'Every WhatsApp chat in one place',
@@ -271,7 +313,7 @@ export const portalScreens = [
   {
     id: 'live',
     path: 'dashboard',
-    image: '/portal/go-live.png',
+    image: '/portal/go-live.svg',
     alt: 'AutoWave home dashboard after going live',
     label: 'Go live',
     caption: "You're all set — stats at a glance",
@@ -338,4 +380,6 @@ export const aboutPoints = [
   'Plain language — no developer jargon in the dashboard',
   'One platform fee — WhatsApp + Instagram auto-replies included',
   '14-day free trial with full access, no credit card',
+  'CareerAI module for placement agencies and career coaches',
+  'Transparent billing with self-service cancellation',
 ];

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Check, ArrowUpRight } from 'lucide-react';
 import { plans } from '../data/content';
 import { registerUrl } from '../config';
@@ -66,7 +67,14 @@ export default function Pricing({ compact = false }) {
         {!compact && (
           <Reveal variant="blur" delay={200}>
             <p className="type-body mx-auto mt-8 max-w-lg text-center text-slate-500">
-              WhatsApp and Instagram messaging fees are billed by Meta. Smart AI uses your OpenRouter or OpenAI key.
+              WhatsApp and Instagram messaging fees are billed by Meta. Smart AI uses your OpenRouter or OpenAI key.{' '}
+              <Link to="/refund" className="font-medium text-emerald-600 hover:underline">
+                Refund & cancellation
+              </Link>
+              {' · '}
+              <Link to="/delivery" className="font-medium text-emerald-600 hover:underline">
+                Digital delivery
+              </Link>
             </p>
           </Reveal>
         )}

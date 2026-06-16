@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#f0fdf4"/>
+  <rect x="80" y="80" width="1040" height="470" rx="32" fill="#fff" stroke="#d1fae5"/>
+  <rect x="120" y="140" width="72" height="72" rx="18" fill="url(#og)"/>
+  <defs>
+    <linearGradient id="og" x1="120" y1="140" x2="192" y2="212" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <text x="210" y="195" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="56" font-weight="800" fill="#0f172a">AutoWave</text>
+  <text x="120" y="280" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="36" font-weight="600" fill="#334155">WhatsApp &amp; Instagram auto-replies</text>
+  <text x="120" y="340" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="28" fill="#64748b">Go live in 15 minutes � 14-day free trial � Made for India</text>
+  <rect x="120" y="400" width="220" height="56" rx="12" fill="#10b981"/>
+  <text x="230" y="437" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#fff">autowave.in</text>
+</svg>

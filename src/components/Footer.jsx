@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowUpRight, Headphones, Mail, Phone, MessageCircle } from 'lucide-react';
-import { footerProductLinks, footerCompanyLinks } from '../data/content';
+import { footerProductLinks, footerCompanyLinks, footerLegalLinks } from '../data/content';
 import { registerUrl, contact, mailtoUrl, telUrl, whatsappUrl, socialLinks } from '../config';
 import { AutoWaveMark } from './AutoWaveBrand';
 
@@ -58,7 +58,7 @@ export default function Footer() {
       {/* Main links */}
       <div className="container-main py-12 pb-20 sm:pb-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-4">
             <Link to="/" className="inline-flex">
               <AutoWaveMark />
             </Link>
@@ -80,7 +80,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="lg:col-span-3 lg:col-start-7">
+          <div className="lg:col-span-2 lg:col-start-5">
             <p className="type-overline text-slate-400">Product</p>
             <ul className="mt-4 space-y-3">
               {footerProductLinks.map(({ label, to }) => (
@@ -97,6 +97,19 @@ export default function Footer() {
             <p className="type-overline text-slate-400">Company</p>
             <ul className="mt-4 space-y-3">
               {footerCompanyLinks.map(({ label, to }) => (
+                <li key={to}>
+                  <Link to={to} className="type-body font-medium text-slate-600 transition hover:text-emerald-600">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="lg:col-span-3">
+            <p className="type-overline text-slate-400">Legal</p>
+            <ul className="mt-4 space-y-3">
+              {footerLegalLinks.map(({ label, to }) => (
                 <li key={to}>
                   <Link to={to} className="type-body font-medium text-slate-600 transition hover:text-emerald-600">
                     {label}

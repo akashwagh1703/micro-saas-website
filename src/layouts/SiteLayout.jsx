@@ -5,6 +5,7 @@ import WhatsAppFab from '../components/WhatsAppFab';
 import ScrollToTop from '../components/ScrollToTop';
 import ScrollProgress from '../components/scroll/ScrollProgress';
 import ScrollAmbient from '../components/scroll/ScrollAmbient';
+import CookieConsent from '../components/CookieConsent';
 import StickyMobileCta from '../components/StickyMobileCta';
 
 export default function SiteLayout() {
@@ -18,6 +19,7 @@ export default function SiteLayout() {
       <Footer />
       <StickyMobileCta />
       <WhatsAppFab />
+      <CookieConsent />
     </div>
   );
 }

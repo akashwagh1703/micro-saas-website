@@ -1,8 +1,9 @@
 import PageHero, { ContentCard } from '../components/PageHero';
 import { aboutPoints } from '../data/content';
-import { registerUrl } from '../config';
+import { registerUrl, company } from '../config';
 import { CheckCircle2 } from 'lucide-react';
 import InnerPageLayout from '../components/InnerPageLayout';
+import PageMeta from '../components/PageMeta';
 import Reveal, { StaggerGroup, StaggerItem } from '../components/scroll/Reveal';
 
 export default function AboutPage() {
@@ -18,6 +19,11 @@ export default function AboutPage() {
         />
       }
     >
+      <PageMeta
+        title="About us"
+        description="AutoWave helps Indian small businesses automate WhatsApp and Instagram customer conversations without developers."
+        path="/about"
+      />
       <div className="container-main">
         <ContentCard>
           <StaggerGroup className="space-y-4" stagger={80}>
@@ -32,8 +38,8 @@ export default function AboutPage() {
           </StaggerGroup>
           <Reveal variant="blur" delay={200}>
             <p className="type-body mt-8 leading-relaxed text-slate-600">
-              AutoWave is a platform — you bring your WhatsApp number and optional AI keys. We host the
-              automation engine, dashboard, and inbox.
+              {company.legalName} builds AutoWave — you bring your WhatsApp number, Instagram account, and
+              optional AI keys. We host the automation engine, dashboard, and inbox.
             </p>
             <a href={registerUrl} className="btn-primary mt-6 w-full sm:w-auto">
               Join AutoWave today

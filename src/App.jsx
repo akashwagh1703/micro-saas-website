@@ -11,6 +11,12 @@ import BlogPage from './pages/BlogPage';
 import BlogPostPage from './pages/BlogPostPage';
 import PrivacyPage from './pages/PrivacyPage';
 import TermsPage from './pages/TermsPage';
+import RefundPage from './pages/RefundPage';
+import DeliveryPage from './pages/DeliveryPage';
+import CookiePage from './pages/CookiePage';
+import SecurityPage from './pages/SecurityPage';
+import CareerAIPage from './pages/CareerAIPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 export default function App() {
   return (
@@ -24,10 +30,16 @@ export default function App() {
           <Route path="/pricing" element={<PricingPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/career-ai" element={<CareerAIPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/refund" element={<RefundPage />} />
+          <Route path="/delivery" element={<DeliveryPage />} />
+          <Route path="/cookies" element={<CookiePage />} />
+          <Route path="/security" element={<SecurityPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

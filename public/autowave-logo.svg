@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" role="img" aria-label="AutoWave">
+  <rect x="0" y="4" width="40" height="40" rx="10" fill="url(#lg)"/>
+  <defs>
+    <linearGradient id="lg" x1="0" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10b981"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <path fill="#fff" d="M12 28c0-5.523 4.477-10 10-10s10 4.477 10 10v1.2c0 .663-.537 1.2-1.2 1.2h-2l-3 3V30.4H21c-5.523 0-10-4.477-10-10V28z" opacity=".95"/>
+  <text x="50" y="32" font-family="Plus Jakarta Sans, system-ui, sans-serif" font-size="22" font-weight="800" fill="#0f172a">AutoWave</text>
+</svg>

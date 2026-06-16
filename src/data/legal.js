@@ -10,7 +10,7 @@ export const privacyPolicy = {
       id: 'who-we-are',
       title: '1. Who we are',
       paragraphs: [
-        'AutoWave is a software platform that helps small businesses automate WhatsApp customer conversations using auto-reply workflows, an inbox, and contact management.',
+        'AutoWave is a software platform that helps small businesses automate WhatsApp and Instagram customer conversations using auto-reply workflows, an inbox, and contact management.',
         'For privacy-related questions, contact us at hello@autowave.in or through the Contact page on our website.',
       ],
     },
@@ -24,7 +24,8 @@ export const privacyPolicy = {
         'Account information: name, email address, and password (stored as a secure hash, never plain text).',
         'Business profile: industry category and use cases you select during setup.',
         'WhatsApp configuration: access tokens, phone number IDs, business account IDs, verify tokens, and app secrets that you voluntarily provide to connect Meta WhatsApp Cloud API. These are encrypted at rest.',
-        'Message data: incoming and outgoing WhatsApp message content, timestamps, contact phone numbers, and conversation metadata processed to power your inbox and auto-replies.',
+        'Instagram configuration: page access tokens, page IDs, verify tokens, and app secrets that you provide to connect Instagram Business messaging. These are encrypted at rest.',
+        'Message data: incoming and outgoing WhatsApp and Instagram message content, timestamps, contact identifiers, and conversation metadata processed to power your inbox and auto-replies.',
         'Workflow data: auto-reply definitions, execution logs, and automation settings you create.',
         'Billing information: subscription status, trial dates, Razorpay customer/subscription IDs when billing is enabled. Payment card details are handled by Razorpay — we do not store full card numbers.',
         'Technical data: IP address, browser type, device information, and usage logs for security and troubleshooting.',
@@ -39,8 +40,8 @@ export const privacyPolicy = {
       ],
       list: [
         'Authenticate your account and maintain your session.',
-        'Connect to Meta WhatsApp Cloud API on your behalf to receive and send messages.',
-        'Execute auto-reply workflows when customers message your WhatsApp number.',
+        'Connect to Meta WhatsApp Cloud API and Instagram Messaging API on your behalf to receive and send messages.',
+        'Execute auto-reply workflows when customers message your WhatsApp number or Instagram account.',
         'Display your inbox, contacts, and dashboard analytics.',
         'Process subscription payments and manage trial/billing status.',
         'Send service-related communications (e.g. trial expiry, payment confirmations).',
@@ -63,7 +64,7 @@ export const privacyPolicy = {
         'We share data only when necessary to run the Service:',
       ],
       list: [
-        'Meta (Facebook): WhatsApp message delivery requires transmitting message content and phone numbers through Meta WhatsApp Cloud API under your configured credentials.',
+        'Meta (Facebook): WhatsApp and Instagram message delivery requires transmitting message content and identifiers through Meta APIs under your configured credentials.',
         'Razorpay: Payment processing when you subscribe to a paid plan.',
         'Cloud infrastructure providers (e.g. Render, PostgreSQL hosting): encrypted database storage and application hosting.',
         'AI providers (OpenRouter/OpenAI): Only when you enable smart reply nodes and provide your own API keys — message content may be sent to generate responses.',
@@ -122,8 +123,8 @@ export const privacyPolicy = {
       id: 'customer-data',
       title: '9. Your customers\' data (end users)',
       paragraphs: [
-        'When you use AutoWave, you may process personal data of your WhatsApp customers (phone numbers, names, message content). You are the data controller for that data; AutoWave acts as a data processor on your instructions to deliver auto-replies and inbox features.',
-        'You must have a lawful basis to message your customers and comply with Meta WhatsApp Business Policy, including obtaining consent where required and honouring opt-out requests.',
+        'When you use AutoWave, you may process personal data of your WhatsApp and Instagram customers (phone numbers, usernames, names, message content). You are the data controller for that data; AutoWave acts as a data processor on your instructions to deliver auto-replies and inbox features.',
+        'You must have a lawful basis to message your customers and comply with Meta WhatsApp Business Policy, Instagram messaging policies, and applicable privacy laws — including obtaining consent where required and honouring opt-out requests.',
       ],
     },
     {
@@ -199,13 +200,14 @@ export const termsOfUse = {
       ],
       list: [
         'Connecting a WhatsApp Business number via Meta WhatsApp Cloud API.',
+        'Connecting an Instagram Business account for direct-message automation.',
         'Creating and running automated message workflows (auto-replies).',
         'Managing customer conversations in an inbox.',
         'Storing contacts and workflow execution logs.',
         'Optional AI-powered smart replies using your own third-party API keys.',
       ],
       paragraphsAfter: [
-        'AutoWave is a technology platform. We do not provide WhatsApp accounts, phone numbers, or AI services directly — you obtain those from Meta and AI providers separately.',
+        'AutoWave is a technology platform. We do not provide WhatsApp accounts, Instagram accounts, phone numbers, or AI services directly — you obtain those from Meta and AI providers separately.',
       ],
     },
     {
@@ -224,9 +226,9 @@ export const termsOfUse = {
         'New accounts may receive a 14-day free trial with full platform access when billing is enabled.',
         'After the trial, a paid subscription (monthly or yearly platform fee) is required to keep auto-replies active. Pricing is displayed on our website and in-app.',
         'Payments are processed by Razorpay. By subscribing, you also agree to Razorpay\'s terms where applicable.',
-        'Subscriptions renew automatically until cancelled. You may cancel before the next billing cycle through Razorpay or by contacting support.',
+        'Subscriptions renew automatically until cancelled. You may cancel at any time from Settings → Plan & billing in the portal, or by emailing hello@autowave.in. Cancellation takes effect at the end of your current billing period — see our Refund & Cancellation Policy.',
         'We may change pricing with at least 30 days\' notice to existing subscribers. Continued use after the effective date constitutes acceptance.',
-        'Refunds are handled on a case-by-case basis unless required by applicable law. Platform fees are non-refundable for partial billing periods unless stated otherwise.',
+        'Refunds are governed by our Refund & Cancellation Policy. Platform fees are generally non-refundable for partial billing periods unless required by applicable law or explicitly approved by AutoWave.',
         'WhatsApp conversation charges from Meta and AI API usage from OpenRouter/OpenAI are billed separately by those providers — not included in the AutoWave platform fee.',
       ],
     },
@@ -247,11 +249,11 @@ export const termsOfUse = {
     },
     {
       id: 'whatsapp-meta',
-      title: '6. WhatsApp & Meta third-party terms',
+      title: '6. WhatsApp, Instagram & Meta third-party terms',
       paragraphs: [
-        'WhatsApp messaging is provided by Meta Platforms, Inc. Your use of WhatsApp through AutoWave is subject to Meta\'s terms, policies, and pricing.',
+        'WhatsApp and Instagram messaging are provided by Meta Platforms, Inc. Your use through AutoWave is subject to Meta\'s terms, policies, and pricing for each channel.',
         'AutoWave is not affiliated with, endorsed by, or sponsored by Meta. Service interruptions caused by Meta API changes, outages, or account restrictions are outside our control.',
-        'You are solely responsible for Meta account status, quality rating, and template/message compliance.',
+        'You are solely responsible for Meta account status, quality rating, and message compliance on both WhatsApp and Instagram.',
       ],
     },
     {
@@ -300,7 +302,7 @@ export const termsOfUse = {
       id: 'liability',
       title: '11. Limitation of liability',
       paragraphs: [
-        'TO THE MAXIMUM EXTENT PERMITTED BY LAW, WHATSFLOW SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST CUSTOMERS, OR BUSINESS INTERRUPTION.',
+        'TO THE MAXIMUM EXTENT PERMITTED BY LAW, AUTOWAVE SHALL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS, LOST CUSTOMERS, OR BUSINESS INTERRUPTION.',
         'Our total liability for any claim arising from the Service shall not exceed the amount you paid to AutoWave in the twelve (12) months preceding the claim, or ₹5,000, whichever is greater.',
         'Some jurisdictions do not allow certain limitations — in those cases, our liability is limited to the fullest extent permitted by law.',
       ],
@@ -346,6 +348,249 @@ export const termsOfUse = {
         'Questions about these Terms:',
         'Email: hello@autowave.in',
         'Website: autowave.in/contact',
+      ],
+    },
+  ],
+};
+
+export const refundPolicy = {
+  title: 'Refund & Cancellation Policy',
+  updated: 'June 13, 2026',
+  intro:
+    'This Refund & Cancellation Policy explains how subscriptions, trials, and payments work for the AutoWave platform (autowave.in). It applies to platform subscriptions billed through Razorpay. CareerAI seeker subscriptions (if enabled by your operator) are billed separately under that operator\'s Razorpay account.',
+  sections: [
+    {
+      id: 'overview',
+      title: '1. Overview',
+      paragraphs: [
+        'AutoWave offers a 14-day free trial on new accounts when billing is enabled. After the trial, a paid monthly or yearly subscription is required to keep auto-replies active.',
+        'All prices are in Indian Rupees (INR) and are displayed on our Pricing page before checkout.',
+      ],
+    },
+    {
+      id: 'cancellation',
+      title: '2. How to cancel',
+      paragraphs: [
+        'You may cancel your subscription at any time using one of these methods:',
+      ],
+      list: [
+        'Self-service: Settings → Plan & billing in the AutoWave portal → Cancel subscription.',
+        'Email: hello@autowave.in from your registered account email with subject "Cancel subscription".',
+      ],
+      paragraphsAfter: [
+        'When you cancel, your subscription is scheduled to end at the close of your current billing period. You retain full access until that date — we do not cut access immediately upon cancellation.',
+      ],
+    },
+    {
+      id: 'refunds',
+      title: '3. Refund eligibility',
+      paragraphs: [
+        'AutoWave platform fees are generally non-refundable once a billing period has started, because the Service is delivered continuously (cloud hosting, automation engine, inbox).',
+        'We may issue a refund or credit in the following situations, at our sole discretion:',
+      ],
+      list: [
+        'Duplicate or erroneous charges caused by a technical fault on our side.',
+        'Extended Service outage (more than 24 consecutive hours) attributable to AutoWave infrastructure, not Meta or third-party APIs.',
+        'Cancellation within 7 days of your first paid charge if you have not published any live auto-reply workflow — contact us within that window.',
+        'Where a refund is required by applicable Indian consumer protection law.',
+      ],
+      paragraphsAfter: [
+        'Refund requests must be emailed to hello@autowave.in within 14 days of the charge with your registered email, Razorpay payment ID, and reason. Approved refunds are processed to the original payment method within 7–10 business days via Razorpay.',
+      ],
+    },
+    {
+      id: 'non-refundable',
+      title: '4. Non-refundable items',
+      list: [
+        'Partial months or years after a billing period has begun.',
+        'Meta WhatsApp or Instagram messaging fees billed directly by Meta.',
+        'AI API usage billed by OpenRouter, OpenAI, or other providers you connect.',
+        'CareerAI seeker subscriptions billed through a third-party operator\'s Razorpay account.',
+        'Accounts terminated for Terms violations or abuse.',
+      ],
+    },
+    {
+      id: 'trial',
+      title: '5. Free trial',
+      paragraphs: [
+        'The 14-day trial provides full platform access without charge. No payment method is required to start a trial unless you choose to subscribe early.',
+        'If you do not subscribe before the trial ends, auto-replies pause until you activate a paid plan. Your account data is retained for a reasonable period so you can reactivate.',
+      ],
+    },
+    {
+      id: 'chargebacks',
+      title: '6. Chargebacks & disputes',
+      paragraphs: [
+        'If you dispute a charge with your bank without contacting us first, we may suspend your account pending investigation. Please email hello@autowave.in — we resolve most billing issues within 2 business days.',
+      ],
+    },
+    {
+      id: 'contact',
+      title: '7. Contact',
+      paragraphs: [
+        'Billing questions and refund requests: hello@autowave.in',
+        'Include your registered email and Razorpay payment or subscription ID for faster resolution.',
+      ],
+    },
+  ],
+};
+
+export const deliveryPolicy = {
+  title: 'Shipping & Delivery Policy',
+  updated: 'June 13, 2026',
+  intro:
+    'AutoWave is a 100% digital SaaS product. We do not ship physical goods. This policy describes how digital access to the Service is delivered after purchase.',
+  sections: [
+    {
+      id: 'digital-delivery',
+      title: '1. Digital delivery',
+      paragraphs: [
+        'Upon successful registration, you receive immediate access to the AutoWave web portal at the URL provided during signup (typically app.autowave.in or your operator-configured portal domain).',
+        'No physical shipment, courier, or postal delivery is involved.',
+      ],
+    },
+    {
+      id: 'activation',
+      title: '2. Subscription activation',
+      paragraphs: [
+        'After completing Razorpay checkout for a paid plan, your subscription is activated within minutes. You will see "Active" status under Settings → Plan & billing.',
+        'If activation does not reflect within 30 minutes, email hello@autowave.in with your Razorpay payment ID.',
+      ],
+    },
+    {
+      id: 'service-delivery',
+      title: '3. What is delivered',
+      list: [
+        'Cloud-hosted automation platform (workflows, inbox, contacts, leads).',
+        'WhatsApp and Instagram webhook integration once you connect your Meta credentials.',
+        'Industry workflow templates and dashboard analytics.',
+        'Optional CareerAI module when that business type is selected.',
+      ],
+    },
+    {
+      id: 'access-requirements',
+      title: '4. Access requirements',
+      paragraphs: [
+        'You need a modern web browser and internet connection. You must connect your own Meta WhatsApp and/or Instagram Business credentials to send and receive messages — AutoWave does not provide phone numbers or social accounts.',
+      ],
+    },
+    {
+      id: 'support',
+      title: '5. Support & onboarding',
+      paragraphs: [
+        'Setup guidance is available in the portal (guided business wizard) and on our How it works page. For help going live, contact hello@autowave.in or WhatsApp us from the Contact page.',
+      ],
+    },
+  ],
+};
+
+export const cookiePolicy = {
+  title: 'Cookie Policy',
+  updated: 'June 13, 2026',
+  intro:
+    'This Cookie Policy explains how AutoWave uses cookies and similar technologies on autowave.in (marketing website) and the AutoWave operator portal.',
+  sections: [
+    {
+      id: 'what-are-cookies',
+      title: '1. What are cookies?',
+      paragraphs: [
+        'Cookies are small text files stored on your device. Local storage and session storage serve similar purposes in web applications.',
+      ],
+    },
+    {
+      id: 'marketing-site',
+      title: '2. Marketing website (autowave.in)',
+      list: [
+        'Essential: cookie consent preference (stores your accept/decline choice).',
+        'Analytics (optional): we may enable privacy-friendly analytics in future — you will be asked before non-essential cookies are set.',
+      ],
+      paragraphsAfter: [
+        'We do not use third-party advertising or retargeting cookies on the marketing site.',
+      ],
+    },
+    {
+      id: 'portal',
+      title: '3. Operator portal',
+      list: [
+        'Authentication token (localStorage): keeps you logged in to the dashboard.',
+        'User preferences: UI state such as sidebar and onboarding progress.',
+      ],
+      paragraphsAfter: [
+        'These are strictly necessary to operate the Service. They are not used for advertising.',
+      ],
+    },
+    {
+      id: 'manage',
+      title: '4. Managing cookies',
+      paragraphs: [
+        'You can clear cookies and local storage through your browser settings. Clearing portal storage will log you out.',
+        'Declining non-essential cookies on our marketing site (via the consent banner) limits optional analytics only — essential site functionality remains available.',
+      ],
+    },
+    {
+      id: 'contact',
+      title: '5. Contact',
+      paragraphs: ['Questions: hello@autowave.in · See also our Privacy Policy.'],
+    },
+  ],
+};
+
+export const securityPolicy = {
+  title: 'Security & Compliance',
+  updated: 'June 13, 2026',
+  intro:
+    'AutoWave is built for business operators who trust us with customer conversations and credentials. This page summarizes our security practices. For full details, see our Privacy Policy.',
+  sections: [
+    {
+      id: 'encryption',
+      title: '1. Encryption',
+      list: [
+        'TLS 1.2+ for all data in transit (HTTPS everywhere).',
+        'AES-256-GCM encryption for WhatsApp, Instagram, and AI API credentials at rest.',
+        'bcrypt password hashing — we never store plain-text passwords.',
+        'Bearer tokens stored as SHA-256 hashes in the database.',
+      ],
+    },
+    {
+      id: 'access-control',
+      title: '2. Access control & isolation',
+      list: [
+        'Multi-tenant isolation: every database query is scoped by account ID.',
+        'Role-based super-admin access for platform operations only.',
+        'Webhook signature verification for Meta and Razorpay events.',
+        'Fail-closed webhook handling when app secrets are not configured.',
+      ],
+    },
+    {
+      id: 'infrastructure',
+      title: '3. Infrastructure',
+      paragraphs: [
+        'The Service runs on reputable cloud providers with encrypted PostgreSQL databases and object storage for CareerAI documents (when configured).',
+        'Production deployments require strong encryption keys and queue-based message processing to avoid webhook timeouts.',
+      ],
+    },
+    {
+      id: 'data-retention',
+      title: '4. Data retention & deletion',
+      list: [
+        'Account deletion requests processed within 30 days.',
+        'CareerAI resume text retention with configurable purge schedules.',
+        'Job seekers can reply DELETE MY DATA on WhatsApp for profile erasure.',
+      ],
+    },
+    {
+      id: 'incident',
+      title: '5. Incident response',
+      paragraphs: [
+        'We investigate security reports promptly. Report vulnerabilities responsibly to hello@autowave.in with subject "Security report". Do not publicly disclose before we acknowledge.',
+      ],
+    },
+    {
+      id: 'compliance',
+      title: '6. Compliance',
+      paragraphs: [
+        'We design for compliance with India\'s Digital Personal Data Protection Act (DPDPA) principles: purpose limitation, data minimization, and user rights.',
+        'Business operators using AutoWave remain responsible for their end-customer consent and Meta platform policies.',
       ],
     },
   ],

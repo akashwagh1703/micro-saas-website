@@ -1,5 +1,6 @@
 import { useScrollProgress } from '../hooks/useScrollProgress';
 import { portalScreens } from '../data/content';
+import { PORTAL_URL } from '../config';
 import Reveal, { StaggerGroup, StaggerItem } from './scroll/Reveal';
 
 function BrowserFrame({ screen, index, scroll }) {
@@ -16,7 +17,7 @@ function BrowserFrame({ screen, index, scroll }) {
           <span className="h-2 w-2 rounded-full bg-amber-400/90" />
           <span className="h-2 w-2 rounded-full bg-emerald-400/90" />
           <span className="ml-2 flex-1 truncate rounded-md bg-white/70 px-2 py-0.5 text-[9px] text-slate-400">
-            portal.autowave.in/{screen.path}
+            {new URL(PORTAL_URL).host}/{screen.path}
           </span>
         </div>
         <div className="portal-frame-body overflow-hidden bg-slate-100">

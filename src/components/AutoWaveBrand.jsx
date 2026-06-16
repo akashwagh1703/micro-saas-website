@@ -1,7 +1,7 @@
 const base = (import.meta.env.BASE_URL || '/').replace(/\/?$/, '/');
 
-export const AUTO_WAVE_ICON = `${base}autowave-icon.png`;
-export const AUTO_WAVE_LOGO = `${base}autowave-logo.png`;
+export const AUTO_WAVE_ICON = `${base}autowave-icon.svg`;
+export const AUTO_WAVE_LOGO = `${base}autowave-logo.svg`;
 export const AUTO_WAVE_NAME = 'AutoWave';
 export const AUTO_WAVE_TAGLINE = 'WhatsApp & Instagram auto-replies for Indian small businesses';
 

@@ -78,6 +78,10 @@ export default function LegalDocument({ doc, icon: Icon = FileText, hideHeader =
               <Link to="/contact" className="font-semibold text-emerald-600 hover:underline">
                 Contact us
               </Link>
+              {' · '}
+              <Link to="/refund" className="font-semibold text-emerald-600 hover:underline">
+                Refund policy
+              </Link>
             </p>
           </div>
         </div>

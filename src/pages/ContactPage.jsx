@@ -1,8 +1,9 @@
 import { Mail, Phone, MessageCircle, MapPin } from 'lucide-react';
 import PageHero, { ContentCard } from '../components/PageHero';
 import IconBox from '../components/icons/IconBox';
-import { contact, mailtoUrl, telUrl, whatsappUrl, socialLinks } from '../config';
+import { contact, mailtoUrl, telUrl, whatsappUrl, socialLinks, company } from '../config';
 import InnerPageLayout from '../components/InnerPageLayout';
+import PageMeta from '../components/PageMeta';
 import { StaggerGroup, StaggerItem } from '../components/scroll/Reveal';
 import Reveal from '../components/scroll/Reveal';
 
@@ -46,6 +47,11 @@ export default function ContactPage() {
         />
       }
     >
+      <PageMeta
+        title="Contact us"
+        description="Reach AutoWave for setup help, billing questions, and partnerships. Email, phone, and WhatsApp support."
+        path="/contact"
+      />
       <div className="container-main">
         <StaggerGroup className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3" stagger={90} variant="scale">
           {channels.map(({ icon: Icon, label, value, href, desc, gradient }) => (
@@ -88,8 +94,12 @@ export default function ContactPage() {
             <div className="mt-8 flex items-start gap-3 rounded-2xl bg-slate-50 p-4">
               <MapPin className="mt-0.5 shrink-0 text-slate-400" size={20} />
               <div>
-                <p className="type-body font-semibold text-slate-800">AutoWave</p>
-                <p className="type-body text-slate-600">Built for small businesses across India · Remote-first team</p>
+                <p className="type-body font-semibold text-slate-800">{company.legalName}</p>
+                <p className="type-body text-slate-600">{company.address}</p>
+                {company.gstin ? (
+                  <p className="type-caption mt-1 text-slate-500">GSTIN: {company.gstin}</p>
+                ) : null}
+                <p className="type-caption mt-2 text-slate-500">{company.supportHours}</p>
               </div>
             </div>
           </ContentCard>
